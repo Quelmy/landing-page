@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Lato } from 'next/font/google'
+import { Header } from "../components/Header";
+
+const lato = Lato({ 
+  subsets: ['latin'],
+  weight: ['400', '700']
+  
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,8 +34,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={lato.className}>
+        <Header />  
         {children}
       </body>
     </html>
