@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Lato } from 'next/font/google'
+import { geistSans, geistMono } from "@/fonts"; // Remova se não for usar
 import { Header } from "../components/Header";
 
 const lato = Lato({ 
