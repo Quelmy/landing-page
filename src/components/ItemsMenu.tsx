@@ -3,7 +3,7 @@ import Image from "next/image";
 import Arrow from '@/assets/arrow-down.svg'
 
 type Props = {
-    name: String
+    name: string
 }
 
 export function ItemsMenu({ name }: Props) {
